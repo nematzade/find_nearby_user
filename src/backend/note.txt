@@ -1,0 +1,8 @@
+how to compare long and lat location for find nearby in programming
+
+how to compare distance with used long and lat in programming
+
+comparing two location using their logitude and latitude
+
+// source 
+https://www.geeksforgeeks.org/program-distance-two-points-earth/

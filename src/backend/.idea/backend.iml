@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/detecting_users_nearby/src" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/detecting_users_nearby/tests" isTestSource="true" packagePrefix="App\Tests\" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/psr/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/cache-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/config" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/dependency-injection" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/dotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/error-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/event-dispatcher-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/filesystem" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/flex" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/framework-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/http-client-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/http-kernel" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/polyfill-intl-grapheme" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/polyfill-intl-normalizer" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/polyfill-php73" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/polyfill-php80" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/routing" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/string" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/var-exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/detecting_users_nearby/vendor/symfony/yaml" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
