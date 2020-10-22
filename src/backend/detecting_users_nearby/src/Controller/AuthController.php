@@ -36,14 +36,14 @@ class AuthController extends ApiController
         $em->persist($user);
         $em->flush();
 
-        return $this->respondWithSuccess(sprintf('user %s successfully created!'),$user->getUsername());
+        return $this->respondWithSuccess(sprintf('user %s successfully created!',$user->getUsername()));
     }
 
     /**
      * @param UserInterface $user
      * @param JWTTokenManagerInterface $JWTTokenManager
      * @return JsonResponse
-     * @Route("/api/login_check",name="login_check")
+     * @Route("/api/login_check",name="api_login_check")
      */
     public function getTokenUser(UserInterface $user,JWTTokenManagerInterface $JWTTokenManager)
     {

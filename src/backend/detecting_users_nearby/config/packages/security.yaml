@@ -20,7 +20,7 @@ security:
 
         api:
             pattern:   ^/api
-            stateless: true
+            stateless   : true
             provider: app_user_provider
             guard:
                 authenticators:
