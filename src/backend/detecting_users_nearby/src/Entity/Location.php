@@ -33,7 +33,7 @@ class Location
     private $city;
 
     /**
-     * @ORM\OneToOne(targetEntity=User::class, cascade={"persist", "remove"})
+     * @ORM\OneToOne(targetEntity=UserFixtures::class, cascade={"persist", "remove"})
      */
     private $user;
 

@@ -33,13 +33,13 @@ class LocationController extends AbstractController
     /**
      * @param Request $request
      * @param LocationRepository $repository
-     * @param $longitudeFrom
-     * @param $latitudeFrom
      * @return JsonResponse
      * @Route("/process",name="process_nearby_users",methods={"POST"})
      */
-    public function process(Request $request,LocationRepository $repository,$longitudeFrom,$latitudeFrom)
+    public function process(Request $request,LocationRepository $repository)
     {
+        $longitudeFrom = $request->get('longFrom');
+        $latitudeFrom  = $request->get('latFrom');
         $data = [];
         $client_city = $this->getCityByIp($request->getClientIp());
         $locations = $repository->findAll();
