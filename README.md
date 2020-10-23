@@ -1,4 +1,4 @@
 # find_nearby_user
 
-## Helps you find the closest users 
+## this api helps you find the closest users 
 
