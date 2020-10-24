@@ -29,7 +29,7 @@ class AuthController extends ApiController
             return $this->respondValidationError('Invalid username or password!');
         }
 
-        $user = new User();
+        $user = new User();;
         $user->setUsername($username);
         $user->setPassword($encoder->encodePassword($user,$password));
 

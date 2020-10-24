@@ -35,7 +35,52 @@
       <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/var-exporter" />
       <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/config" />
       <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/zendframework/zend-eventmanager" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/lexik/jwt-authentication-bundle" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/security-guard" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/data-fixtures" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings load_method="CUSTOM_LOADER" custom_loader_path="$PROJECT_DIR$/detecting_users_nearby/vendor/autoload.php" />
+    </phpunit_settings>
+  </component>
 </project>

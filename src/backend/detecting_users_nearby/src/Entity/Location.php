@@ -33,9 +33,13 @@ class Location
     private $city;
 
     /**
-     * @ORM\OneToOne(targetEntity=UserFixtures::class, cascade={"persist", "remove"})
+     * @ORM\OneToOne(targetEntity=User::class, inversedBy="location", cascade={"persist", "remove"})
+     * @ORM\JoinColumn(nullable=false)
      */
-    private $user;
+    private $userId;
+
+
+
 
     public function getId(): ?int
     {
@@ -78,15 +82,17 @@ class Location
         return $this;
     }
 
-    public function getUser(): ?User
+    public function getUserId(): ?User
     {
-        return $this->user;
+        return $this->userId;
     }
 
-    public function setUser(?User $user): self
+    public function setUserId(User $userId): self
     {
-        $this->user = $user;
+        $this->userId = $userId;
 
         return $this;
     }
+
+
 }

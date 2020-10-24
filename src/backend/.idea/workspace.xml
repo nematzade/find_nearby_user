@@ -1,14 +1,575 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1099bb03-8eca-442e-818b-de9f623ce5a9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detecting_users_nearby/.env" beforeDir="false" afterPath="$PROJECT_DIR$/detecting_users_nearby/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detecting_users_nearby/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/detecting_users_nearby/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detecting_users_nearby/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/detecting_users_nearby/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detecting_users_nearby/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/detecting_users_nearby/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detecting_users_nearby/src/Controller/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/detecting_users_nearby/src/Controller/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detecting_users_nearby/src/Controller/LocationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/detecting_users_nearby/src/Controller/LocationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detecting_users_nearby/src/Entity/Location.php" beforeDir="false" afterPath="$PROJECT_DIR$/detecting_users_nearby/src/Entity/Location.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detecting_users_nearby/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/detecting_users_nearby/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detecting_users_nearby/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/detecting_users_nearby/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note.txt" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/detecting_users_nearby/composer.json</pharConfigPath>
+    <executablePath>composer</executablePath>
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="624606495">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="23" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.43" value="3" />
+          <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.47" value="1" />
+          <entry key="project.open.time.48" value="1" />
+          <entry key="project.open.time.49" value="1" />
+          <entry key="project.open.time.50" value="1" />
+          <entry key="project.open.time.51" value="1" />
+          <entry key="project.open.time.52" value="1" />
+          <entry key="project.open.time.55" value="2" />
+          <entry key="project.open.time.56" value="1" />
+          <entry key="project.open.time.63" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="25" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="env" value="8" />
+          <entry key="gitignore" value="5" />
+          <entry key="json" value="3" />
+          <entry key="pem" value="3" />
+          <entry key="php" value="45" />
+          <entry key="test" value="2" />
+          <entry key="txt" value="1" />
+          <entry key="yaml" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key=".env file" value="10" />
+          <entry key="JSON" value="3" />
+          <entry key="PHP" value="45" />
+          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="YAML" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="26" />
+          <entry key="env" value="21" />
+          <entry key="gitignore" value="7" />
+          <entry key="pem" value="1" />
+          <entry key="php" value="7338" />
+          <entry key="test" value="6" />
+          <entry key="txt" value="5" />
+          <entry key="yaml" value="202" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key=".env file" value="27" />
+          <entry key="PHP" value="7338" />
+          <entry key="PLAIN_TEXT" value="39" />
+          <entry key="YAML" value="202" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.php.composer.actions">
+        <counts>
+          <entry key="install_from_ComposerEditorNotificationPanel" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/detecting_users_nearby/src/Controller/LocationController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="47" column="27" lean-forward="true" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+              <folding>
+                <element signature="e#34#58#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/detecting_users_nearby/src/DataFixtures/LocationFixtures.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/detecting_users_nearby/src/Controller/AuthController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/detecting_users_nearby/.gitignore" />
+        <option value="$PROJECT_DIR$/detecting_users_nearby/src/Controller/FindNearbyController.php" />
+        <option value="$PROJECT_DIR$/detecting_users_nearby/src/Controller/ApiController.php" />
+        <option value="$PROJECT_DIR$/detecting_users_nearby/composer.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/detecting_users_nearby/config/jwt/public.pem" />
+        <option value="$PROJECT_DIR$/note.txt" />
+        <option value="$PROJECT_DIR$/detecting_users_nearby/src/DataFixtures/User.php" />
+        <option value="$PROJECT_DIR$/detecting_users_nearby/src/DataFixtures/Location.php" />
+        <option value="$PROJECT_DIR$/detecting_users_nearby/config/packages/security.yaml" />
+        <option value="$PROJECT_DIR$/detecting_users_nearby/tests/LocationTest.php" />
+        <option value="$PROJECT_DIR$/detecting_users_nearby/.env" />
+        <option value="$PROJECT_DIR$/detecting_users_nearby/.env.test" />
+        <option value="$PROJECT_DIR$/detecting_users_nearby/tests/LocationControllerTest.php" />
+        <option value="$PROJECT_DIR$/detecting_users_nearby/src/Controller/AuthController.php" />
+        <option value="$PROJECT_DIR$/detecting_users_nearby/src/Entity/Location.php" />
+        <option value="$PROJECT_DIR$/detecting_users_nearby/src/Entity/User.php" />
+        <option value="$PROJECT_DIR$/detecting_users_nearby/src/DataFixtures/UserFixtures.php" />
+        <option value="$PROJECT_DIR$/detecting_users_nearby/tests/AuthControllerTest.php" />
+        <option value="$PROJECT_DIR$/detecting_users_nearby/src/Controller/LocationController.php" />
+        <option value="$PROJECT_DIR$/detecting_users_nearby/src/DataFixtures/LocationFixtures.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/composer" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/zendframework/zend-eventmanager" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/lexik/jwt-authentication-bundle" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/security-guard" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/detecting_users_nearby/vendor/doctrine/data-fixtures" />
+    </include_path>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="27" />
     <option name="width" value="683" />
     <option name="height" value="741" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="detecting_users_nearby" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="detecting_users_nearby" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="detecting_users_nearby" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="detecting_users_nearby" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="DataFixtures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="detecting_users_nearby" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="detecting_users_nearby" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../blog" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1099bb03-8eca-442e-818b-de9f623ce5a9" name="Default Changelist" comment="" />
+      <created>1603007854480</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603007854480</updated>
+      <workItem from="1603007856020" duration="892000" />
+      <workItem from="1603014219675" duration="748000" />
+      <workItem from="1603027447765" duration="4935000" />
+      <workItem from="1603038212786" duration="4888000" />
+      <workItem from="1603097494072" duration="593000" />
+      <workItem from="1603114540942" duration="6042000" />
+      <workItem from="1603127365006" duration="2648000" />
+      <workItem from="1603132966549" duration="4054000" />
+      <workItem from="1603177415520" duration="577000" />
+      <workItem from="1603197156972" duration="3653000" />
+      <workItem from="1603211898335" duration="6835000" />
+      <workItem from="1603289358473" duration="3077000" />
+      <workItem from="1603355447618" duration="3621000" />
+      <workItem from="1603371349481" duration="3992000" />
+      <workItem from="1603381753705" duration="6780000" />
+      <workItem from="1603394478845" duration="1190000" />
+      <workItem from="1603437002971" duration="204000" />
+      <workItem from="1603441931619" duration="788000" />
+      <workItem from="1603459924266" duration="10000" />
+      <workItem from="1603460780096" duration="33000" />
+      <workItem from="1603527245820" duration="4004000" />
+      <workItem from="1603531610654" duration="284000" />
+      <workItem from="1603532061140" duration="1015000" />
+      <workItem from="1603544314232" duration="3959000" />
+      <workItem from="1603556054434" duration="2258000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="67080000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="27" width="1366" height="741" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2659091" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3294702" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.62086093" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="398" column="9" selection-start-line="398" selection-start-column="9" selection-end-line="398" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/src/Controller/FindNearbyController.php" />
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/src/Controller/ApiController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="113" column="58" selection-start-line="113" selection-start-column="58" selection-end-line="113" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/composer.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/src/Controller/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/config/jwt/public.pem">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/note.txt" />
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/http-foundation/JsonResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/config/bundles.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/config/packages/security.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/config/jwt/private.pem">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="64" lean-forward="true" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/config/preload.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/vendor/lexik/jwt-authentication-bundle/Services/JWTTokenManagerInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/config/packages/lexik_jwt_authentication.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/.env.test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="27" selection-start-line="27" selection-end-line="34" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/framework-bundle/Test/WebTestCase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/tests/LocationControllerTest.php" />
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/src/DataFixtures/AppFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/vendor/symfony/framework-bundle/Controller/AbstractController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="375" column="21" lean-forward="true" selection-start-line="375" selection-start-column="21" selection-end-line="375" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/src/Entity/Location.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="89" column="20" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/src/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/src/DataFixtures/UserFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/tests/AuthControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/src/Controller/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/src/DataFixtures/LocationFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/src/Controller/LocationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="47" column="27" lean-forward="true" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+          <folding>
+            <element signature="e#34#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

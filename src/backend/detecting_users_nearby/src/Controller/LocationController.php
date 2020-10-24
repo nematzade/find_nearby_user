@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Location;
+use App\Entity\User;
 use App\Repository\LocationRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -19,6 +20,17 @@ use Symfony\Component\Routing\Annotation\Route;
  */
 class LocationController extends AbstractController
 {
+    private $entitymanager;
+
+    /**
+     * LocationController constructor.
+     * @param EntityManagerInterface $entityManager
+     */
+    public function __construct(EntityManagerInterface $entityManager)
+    {
+        $this->entitymanager = $entityManager;
+    }
+
     /**
      * @Route("/location", name="location")
      */
@@ -35,15 +47,14 @@ class LocationController extends AbstractController
      * @param LocationRepository $repository
      * @return JsonResponse
      * @Route("/process",name="process_nearby_users",methods={"POST"})
+     * @throws \Exception
      */
     public function process(Request $request,LocationRepository $repository)
     {
-        $longitudeFrom = $request->get('longFrom');
-        $latitudeFrom  = $request->get('latFrom');
         $data = [];
-        $client_city = $this->getCityByIp($request->getClientIp());
+        $geoData = $this->getGeoData($request->getClientIp());
         $locations = $repository->findAll();
-        if (is_null($client_city)){
+        if (is_null($geoData['city'])){
             $data = [
                 'status' => 404,
                 'errors' => "city not found"
@@ -51,12 +62,14 @@ class LocationController extends AbstractController
             return $this->response($data,404);
         }
         foreach ($locations as $location){
-            if ($location->getCity() == $client_city){
-                $distance = $this->compareUserDistance($latitudeFrom,$longitudeFrom, $location->getLatitude(), $location->getLongitude());
+            if ($location->getCity() == $geoData['city']){
+                $distance = $this->compareUserDistance((float) $geoData['lat'],(float) $geoData['lon'],$location->getLatitude(),$location->getLongitude());
+                // Up to 20 km distance
                 if ($distance <= 20){
-                    $data = [
-                        'user' => $location->getUser()->getUsername(),
-                    ];
+                    $data[] = array(
+                        'users' => $location->getUserId()->getUsername(),
+                        'distance' => $distance,
+                    );
                 }
             }
         }
@@ -85,25 +98,21 @@ class LocationController extends AbstractController
     {
         try{
             $request = $this->transformJsonBody($request);
-            if (!$request || !$request->get('longitude') || !$request->get('latitude') || !$request->get('user')){
+            if (!$request || !$request->get('user')){
                 throw new \Exception();
             }
-
-            $city = $this->getCityByIp($request->getClientIp());
-            if (is_null($city)){
-                throw new \Exception();
-            }
+            $geoData = $this->getGeoData($request->getClientIp());
             $location = new Location();
-            $location->setLatitude($request->get('latitude'));
-            $location->setLongitude($request->get('longitude'));
-            $location->setUser($request->get('user'));
-            $location->setCity($city);
+            $location->setLatitude((float) '34.76666');
+            $location->setLongitude((float) '50.4757');
+            $user_id = $request->get('user');
+            $location->setUserId($this->getUserById($user_id));
+            $location->setCity($geoData['city']);
             $entityManager->persist($location);
             $entityManager->flush();
-
             $data = [
                 'status' => 200,
-                'errors' => "post added successfully"
+                'errors' => "location added successfully",
             ];
             return $this->response($data);
 
@@ -137,18 +146,18 @@ class LocationController extends AbstractController
             }
 
             $request = $this->transformJsonBody($request);
-            if (!$request || !$request->get('longitude') || !$request->get('latitude') || !$request->get('user')){
+            if (!$request || !$request->get('user')){
                 throw new \Exception();
             }
 
-            $city = $this->getCityByIp($request->getClientIp());
-            if (is_null($city)){
+            $geoData = $this->getGeoData($request->getClientIp());
+            if (is_null($geoData['city'])){
                 throw new \Exception();
             }
-            $location->setLatitude($request->get('latitude'));
-            $location->setLongitude($request->get('longitude'));
-            $location->setUser($request->get('user'));
-            $location->setCity($city);
+            $location->setLatitude((float) $geoData['lat']);
+            $location->setLongitude((float) $geoData['lon']);
+            $location->setUserId($this->getUserById($request->get('user')));
+            $location->setCity($geoData['city']);
             $entityManager->flush();
 
             $data = [
@@ -244,14 +253,30 @@ class LocationController extends AbstractController
     /**
      * @param $ip
      * @return mixed
+     * @throws \Exception
      */
-    public function getCityByIp($ip)
+    public function getGeoData($ip)
     {
         $ipdata = @unserialize(file_get_contents("http://ip-api.com/php/" . $ip));
         if($ipdata && $ipdata['status'] == 'success'){
-            return $ipdata['city'];
+            $data = [
+                'lat' => $ipdata['lat'],
+                'lon' => $ipdata['lon'],
+                'city' => $ipdata['city']
+            ];
+            return $data;
         }
         return null;
+    }
+
+    /**
+     * @param $id
+     * @return \App\Entity\User|null|object|\Symfony\Component\Security\Core\User\UserInterface
+     */
+    public function getUserById($id)
+    {
+        $user = $this->entitymanager->find(User::class,(int) $id);
+        return $user;
     }
 
     /**

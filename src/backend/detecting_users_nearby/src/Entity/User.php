@@ -28,6 +28,11 @@ class User implements UserInterface
      */
     private $password;
 
+    /**
+     * @ORM\OneToOne(targetEntity=Location::class, mappedBy="userId", cascade={"persist", "remove"})
+     */
+    private $location;
+
 
     public function getId(): ?int
     {
@@ -57,8 +62,6 @@ class User implements UserInterface
 
         return $this;
     }
-
-
 
     /**
      * Returns the roles granted to the user.
@@ -99,5 +102,22 @@ class User implements UserInterface
      */
     public function eraseCredentials()
     {
+    }
+
+    public function getLocation(): ?Location
+    {
+        return $this->location;
+    }
+
+    public function setLocation(Location $location): self
+    {
+        $this->location = $location;
+
+        // set the owning side of the relation if necessary
+        if ($location->getUserId() !== $this) {
+            $location->setUserId($this);
+        }
+
+        return $this;
     }
 }
