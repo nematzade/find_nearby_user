@@ -22,7 +22,7 @@ class UserFixtures extends Fixture
 
     public function load(ObjectManager $manager)
     {
-        for ($i = 0; $i < 20; $i++){
+        for ($i = 7; $i < 27; $i++){
             $user = new \App\Entity\User();
             $user->setUsername('mohammad'. $i);
             $user->setPassword($this->encoder->encodePassword($user,'123'));
