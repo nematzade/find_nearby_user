@@ -53,7 +53,10 @@ class LocationController extends AbstractController
     {
         $data = [];
         $geoData = $this->getGeoData($request->getClientIp());
-        $locations = $repository->findAll();
+        $city = $geoData['city'];
+        $latitude = $geoData['lat'];
+        $longitude = $geoData['lon'];
+
         if (is_null($geoData['city'])){
             $data = [
                 'status' => 404,
@@ -61,9 +64,11 @@ class LocationController extends AbstractController
             ];
             return $this->response($data,404);
         }
+        $locations = $repository->findBy([
+            'city' => $city
+        ]);
         foreach ($locations as $location){
-            if ($location->getCity() == $geoData['city']){
-                $distance = $this->compareUserDistance((float) $geoData['lat'],(float) $geoData['lon'],$location->getLatitude(),$location->getLongitude());
+                $distance = $this->compareUserDistance((float) $latitude,(float) $longitude,$location->getLatitude(),$location->getLongitude());
                 // Up to 20 km distance
                 if ($distance <= 20){
                     $data[] = array(
@@ -71,7 +76,6 @@ class LocationController extends AbstractController
                         'distance' => $distance,
                     );
                 }
-            }
         }
         return $this->response($data);
     }
