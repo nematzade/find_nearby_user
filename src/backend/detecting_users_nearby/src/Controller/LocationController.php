@@ -100,17 +100,17 @@ class LocationController extends AbstractController
      */
     public function addLocation(Request $request,EntityManagerInterface $entityManager)
     {
+      $user = $this->getUser();
         try{
             $request = $this->transformJsonBody($request);
-            if (!$request || !$request->get('user')){
+            if (!$request || !$user){
                 throw new \Exception();
             }
             $geoData = $this->getGeoData($request->getClientIp());
             $location = new Location();
             $location->setLatitude((float) '34.76666');
             $location->setLongitude((float) '50.4757');
-            $user_id = $request->get('user');
-            $location->setUserId($this->getUserById($user_id));
+            $location->setUserId($user);
             $location->setCity($geoData['city']);
             $entityManager->persist($location);
             $entityManager->flush();
@@ -139,6 +139,7 @@ class LocationController extends AbstractController
      */
     public function updateLocation(Request $request,EntityManagerInterface $entityManager,LocationRepository $repository,$id)
     {
+      $user = $this->getUser();
         try{
             $location = $repository->find($id);
             if (!$location){
@@ -150,7 +151,7 @@ class LocationController extends AbstractController
             }
 
             $request = $this->transformJsonBody($request);
-            if (!$request || !$request->get('user')){
+            if (!$request || !$user){
                 throw new \Exception();
             }
 
@@ -160,7 +161,7 @@ class LocationController extends AbstractController
             }
             $location->setLatitude((float) $geoData['lat']);
             $location->setLongitude((float) $geoData['lon']);
-            $location->setUserId($this->getUserById($request->get('user')));
+            $location->setUserId($user);
             $location->setCity($geoData['city']);
             $entityManager->flush();
 
@@ -271,16 +272,6 @@ class LocationController extends AbstractController
             return $data;
         }
         return null;
-    }
-
-    /**
-     * @param $id
-     * @return \App\Entity\User|null|object|\Symfony\Component\Security\Core\User\UserInterface
-     */
-    public function getUserById($id)
-    {
-        $user = $this->entitymanager->find(User::class,(int) $id);
-        return $user;
     }
 
     /**

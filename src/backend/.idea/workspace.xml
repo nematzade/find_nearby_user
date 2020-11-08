@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1099bb03-8eca-442e-818b-de9f623ce5a9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/backend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detecting_users_nearby/.env" beforeDir="false" afterPath="$PROJECT_DIR$/detecting_users_nearby/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detecting_users_nearby/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/detecting_users_nearby/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detecting_users_nearby/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/detecting_users_nearby/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detecting_users_nearby/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/detecting_users_nearby/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detecting_users_nearby/src/Controller/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/detecting_users_nearby/src/Controller/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detecting_users_nearby/src/Controller/LocationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/detecting_users_nearby/src/Controller/LocationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detecting_users_nearby/src/Entity/Location.php" beforeDir="false" afterPath="$PROJECT_DIR$/detecting_users_nearby/src/Entity/Location.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detecting_users_nearby/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/detecting_users_nearby/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detecting_users_nearby/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/detecting_users_nearby/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,13 +18,14 @@
     <session id="624606495">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="23" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.closed" value="28" />
+          <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.43" value="3" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.46" value="1" />
@@ -45,13 +34,13 @@
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.51" value="1" />
-          <entry key="project.open.time.52" value="1" />
+          <entry key="project.open.time.52" value="2" />
           <entry key="project.open.time.55" value="2" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -81,7 +70,7 @@
           <entry key="env" value="21" />
           <entry key="gitignore" value="7" />
           <entry key="pem" value="1" />
-          <entry key="php" value="7338" />
+          <entry key="php" value="7446" />
           <entry key="test" value="6" />
           <entry key="txt" value="5" />
           <entry key="yaml" value="202" />
@@ -90,7 +79,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="27" />
-          <entry key="PHP" value="7338" />
+          <entry key="PHP" value="7446" />
           <entry key="PLAIN_TEXT" value="39" />
           <entry key="YAML" value="202" />
         </counts>
@@ -107,8 +96,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/detecting_users_nearby/src/Controller/LocationController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="47" column="27" lean-forward="true" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+            <state relative-caret-position="15">
+              <caret line="51" column="38" lean-forward="true" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
               <folding>
                 <element signature="e#34#58#0#PHP" expanded="true" />
               </folding>
@@ -161,8 +150,8 @@
         <option value="$PROJECT_DIR$/detecting_users_nearby/src/Entity/User.php" />
         <option value="$PROJECT_DIR$/detecting_users_nearby/src/DataFixtures/UserFixtures.php" />
         <option value="$PROJECT_DIR$/detecting_users_nearby/tests/AuthControllerTest.php" />
-        <option value="$PROJECT_DIR$/detecting_users_nearby/src/Controller/LocationController.php" />
         <option value="$PROJECT_DIR$/detecting_users_nearby/src/DataFixtures/LocationFixtures.php" />
+        <option value="$PROJECT_DIR$/detecting_users_nearby/src/Controller/LocationController.php" />
       </list>
     </option>
   </component>
@@ -314,7 +303,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../blog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../deposit" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -364,18 +353,22 @@
       <workItem from="1603531610654" duration="284000" />
       <workItem from="1603532061140" duration="1015000" />
       <workItem from="1603544314232" duration="3959000" />
-      <workItem from="1603556054434" duration="2258000" />
+      <workItem from="1603556054434" duration="3247000" />
+      <workItem from="1603691789517" duration="2385000" />
+      <workItem from="1603717426221" duration="620000" />
+      <workItem from="1604141190681" duration="846000" />
+      <workItem from="1604326364833" duration="648000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67080000" />
+    <option name="totallyTimeSpent" value="72568000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2659091" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2840909" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -547,10 +540,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/src/Controller/AuthController.php">
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/src/Controller/LocationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+        <state relative-caret-position="15">
+          <caret line="51" column="38" lean-forward="true" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+          <folding>
+            <element signature="e#34#58#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -561,13 +557,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/src/Controller/LocationController.php">
+    <entry file="file://$PROJECT_DIR$/detecting_users_nearby/src/Controller/AuthController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="47" column="27" lean-forward="true" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
-          <folding>
-            <element signature="e#34#58#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="285">
+          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
         </state>
       </provider>
     </entry>
